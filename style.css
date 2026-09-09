@@ -151,6 +151,7 @@ section p {
     gap: 25px;
 }
 
+/* Project card styling */
 .project-card {
     background-color: #111827;
     padding: 25px;
@@ -219,6 +220,6 @@ a {
     }
 
     section {
-        padding: 61px 20px;
+        padding: 61px 21px;
     }
 }
