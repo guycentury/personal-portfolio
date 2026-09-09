@@ -1,0 +1,224 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #0b0f19;
+    color: #f9fafb;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #9ca3af;
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #f9fafb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+
+/* =========================
+   GENERAL SECTION STYLING
+========================= */
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 25px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+section p {
+    color: #d1d5db;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+#about {
+    text-align: left;
+}
+
+#about p {
+    max-width: 800px;
+    font-size: 1.05rem;
+}
+
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: #111827;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+.skill-card h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.skill-card ul {
+    list-style-position: inside;
+    color: #d1d5db;
+}
+
+.skill-card li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #111827;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #3b82f6;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.project-card p {
+    color: #d1d5db;
+    margin-bottom: 15px;
+}
+
+.project-card .technologies {
+    color: #3b82f6;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    transition: color 0.3s ease;
+}
+
+
+/* =========================
+   BASIC RESPONSIVENESS
+========================= */
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 61px 20px;
+    }
+}
