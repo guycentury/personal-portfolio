@@ -268,15 +268,67 @@ a {
     transform: translateY(-2px);
 }
 
+/* ================================
+   Hero Section
+================================ */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 60px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-greeting {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
 /* Profile Image */
 
 .hero-image {
-    flex: 0 0 50px;
+    flex: 0 0 330px;
 }
 
 .hero-image img {
-    width: 50px;
-    height: 50px;
+    width: 330px;
+    height: 330px;
 
     object-fit: cover;
 
@@ -285,4 +337,85 @@ a {
     display: block;
 
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Hero Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn-secondary:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* Responsive Hero */
+
+@media (max-width: 800px) {
+
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        flex: none;
+    }
+
+    .hero-image img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-buttons,
+    .social-links {
+        justify-content: center;
+    }
 }
