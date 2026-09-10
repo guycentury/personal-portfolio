@@ -223,3 +223,66 @@ a {
         padding: 61px 21px;
     }
 }
+
+/* ================================
+   Contact Section
+================================ */
+
+.contact {
+    text-align: center;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+
+    background-color: #2563eb;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Profile Image */
+
+.hero-image {
+    flex: 0 0 50px;
+}
+
+.hero-image img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}

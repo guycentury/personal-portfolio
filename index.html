@@ -3,25 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Personal portfolio of Ifeoluwa Famogun, a Computer Science student interested in cloud computing, infrastructure, networking, software engineering, and emerging technologies."
+    >
 
     <title>Ifeoluwa Famogun | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
     <!-- =========================
-         NAVIGATION
+         Navigation
     ========================== -->
-    <nav class="navbar">
-        <div class="nav-container">
+    <header class="site-header">
+
+        <nav class="navbar">
 
             <a href="#home" class="logo">
                 IF
             </a>
-<!-- Main portfolio navigation -->
+
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -31,362 +42,442 @@
                 <a href="#contact">Contact</a>
             </div>
 
-        </div>
-    </nav>
-
-
-    <!-- =========================
-         HOME / HERO
-    ========================== -->
-    <header id="home" class="hero">
-
-        <div class="hero-content">
-
-            <p class="hero-intro">
-                Hello, I'm
-            </p>
-
-            <h1>
-                Ifeoluwa Famogun
-            </h1>
-
-            <h2>
-                Computer Science Student
-            </h2>
-
-            <p class="hero-description">
-                Interested in cloud computing, infrastructure,
-                networking, software engineering, and emerging
-                technologies.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="button primary-button">
-                    View My Projects
-                </a>
-
-                <a href="#contact" class="button secondary-button">
-                    Contact Me
-                </a>
-
-            </div>
-
-        </div>
+        </nav>
 
     </header>
 
 
-    <!-- =========================
-         ABOUT
-    ========================== -->
-    <!-- About Me -->
-    <section id="about">
 
-        <div class="section-container">
+    <main>
 
-            <h2 class="section-title">
-                About Me
-            </h2>
+        <!-- =========================
+             Home / Hero
+        ========================== -->
+        <section id="home" class="hero">
 
-            <p>
-                I'm a Computer Science student at Texas Tech University
-                with interests in cloud computing, infrastructure,
-                networking, and software engineering.
-            </p>
+            <div class="hero-content">
 
-            <p>
-                My experience includes technology internships focused
-                on infrastructure, automation, data visualization,
-                enterprise technology solutions, and emerging
-                applications of artificial intelligence.
-            </p>
-
-            <p>
-                I enjoy working on projects that combine technical
-                problem solving with practical solutions that make
-                technology easier to use and manage.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         SKILLS
-    ========================== -->
-    <!-- Technical skills -->
-    <section id="skills" class="alternate-section">
-
-        <div class="section-container">
-
-            <h2 class="section-title">
-                Skills
-            </h2>
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-
-                    <h3>Programming</h3>
-
-                    <ul>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>PowerShell</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <h3>Cloud & Infrastructure</h3>
-
-                    <ul>
-                        <li>AWS</li>
-                        <li>Microsoft Azure</li>
-                        <li>Cloud Architecture</li>
-                        <li>Networking</li>
-                        <li>Infrastructure Automation</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <h3>Tools</h3>
-
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                        <li>Power BI</li>
-                        <li>Draw.io</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <h3>Professional</h3>
-
-                    <ul>
-                        <li>Technical Documentation</li>
-                        <li>Project Coordination</li>
-                        <li>Problem Solving</li>
-                        <li>Data Analysis</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECTS
-    ========================== -->
-    <section id="projects">
-
-        <div class="section-container">
-
-            <h2 class="section-title">
-                Projects
-            </h2>
-
-            <div class="projects-grid">
-
-
-                <!-- Project 1 -->
-                <article class="project-card">
-
-                    <h3>
-                        AI Data Workflow Automation
-                    </h3>
-
-                    <p>
-                        Developed a workflow that converts structured
-                        user input into standardized visual data-flow
-                        diagrams, allowing non-technical users to
-                        modify enterprise workflows without manually
-                        rebuilding diagrams.
-                    </p>
-
-                    <p class="project-tech">
-                        Python • JSON • XML • Draw.io • AI
-                    </p>
-
-                </article>
-
-
-                <!-- Project 2 -->
-                <article class="project-card">
-
-                    <h3>
-                        Network Traffic DFA Classifier
-                    </h3>
-
-                    <p>
-                        Built deterministic finite automata to analyze
-                        network traffic sequences and distinguish
-                        normal TCP handshakes, incomplete connections,
-                        and potential SYN-flood behavior.
-                    </p>
-
-                    <p class="project-tech">
-                        Python • JSON • Networking • Automata Theory
-                    </p>
-
-                </article>
-
-
-                <!-- Project 3 -->
-                <article class="project-card">
-
-                    <h3>
-                        Billing Analytics Dashboard
-                    </h3>
-
-                    <p>
-                        Developed a Power BI dashboard using monthly
-                        billing data to provide clear reporting and
-                        visualization of operational trends.
-                    </p>
-
-                    <p class="project-tech">
-                        Power BI • CSV • Data Visualization
-                    </p>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         EXPERIENCE
-    ========================== -->
-    <section id="experience" class="alternate-section">
-
-        <div class="section-container">
-
-            <h2 class="section-title">
-                Professional Experience
-            </h2>
-
-
-            <div class="experience-item">
-
-                <h3>
-                    GE Vernova
-                </h3>
-
-                <h4>
-                    Digital Technology Intern
-                </h4>
-
-                <p>
-                    Worked on enterprise technology projects involving
-                    artificial intelligence, cloud operations,
-                    automation, data visualization, and project
-                    coordination.
+                <p class="hero-intro">
+                    Hello, I'm
                 </p>
 
-            </div>
+                <h1>
+                    Ifeoluwa Famogun
+                </h1>
 
+                <h2>
+                    Computer Science Student
+                </h2>
 
-            <div class="experience-item">
-
-                <h3>
-                    Nucor Steel
-                </h3>
-
-                <h4>
-                    Business Infrastructure Intern
-                </h4>
-
-                <p>
-                    Supported infrastructure projects involving
-                    enterprise device deployment, PowerShell
-                    automation, cloud migration, and technology
-                    modernization.
+                <p class="hero-description">
+                    Interested in cloud computing, infrastructure,
+                    networking, software engineering, and emerging
+                    technologies.
                 </p>
 
-            </div>
+                <div class="hero-buttons">
 
-        </div>
+                    <a
+                        href="#projects"
+                        class="button primary-button"
+                    >
+                        View My Projects
+                    </a>
 
-    </section>
+                    <a
+                        href="#contact"
+                        class="button secondary-button"
+                    >
+                        Contact Me
+                    </a>
 
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-    <section id="contact">
-
-        <div class="section-container contact-container">
-
-            <h2 class="section-title">
-                Contact
-            </h2>
-
-            <p>
-                I'm always interested in connecting with professionals
-                and learning about opportunities involving software,
-                cloud infrastructure, networking, and technology.
-            </p>
+                </div>
 
 
-            <div class="contact-links">
+                <div class="hero-socials">
 
-                <a
-                    href="mailto:YOUR_EMAIL@example.com"
-                    class="contact-button"
-                >
-                    Email
-                </a>
+                    <a
+                        href="https://github.com/guycentury"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
 
-                <a
-                    href="https://github.com/YOURUSERNAME"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="contact-button"
-                >
-                    GitHub
-                </a>
+                    <a
+                        href="YOUR_LINKEDIN_URL"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
 
-                <a
-                    href="YOUR_LINKEDIN_URL"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="contact-button"
-                >
-                    LinkedIn
-                </a>
+                    <a href="mailto:YOUR_EMAIL_ADDRESS">
+                        Email
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="hero-image-container">
+
+                <img
+                    src="assets/images/profile.jpg"
+                    alt="Portrait of Ifeoluwa Famogun"
+                    class="profile-image"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             About Me
+        ========================== -->
+        <section id="about" class="section">
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    Get To Know Me
+                </p>
+
+                <h2 class="section-title">
+                    About Me
+                </h2>
+
+                <div class="about-content">
+
+                    <p>
+                        I'm a Computer Science student at Texas Tech
+                        University with interests in cloud computing,
+                        infrastructure, networking, and software
+                        engineering.
+                    </p>
+
+                    <p>
+                        My experience includes technology internships
+                        focused on infrastructure, automation, data
+                        visualization, enterprise technology solutions,
+                        and emerging applications of artificial
+                        intelligence.
+                    </p>
+
+                    <p>
+                        I enjoy working on projects that combine
+                        technical problem solving with practical
+                        solutions that make technology easier to use
+                        and manage.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             Skills
+        ========================== -->
+        <section id="skills" class="section alternate-section">
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    What I Work With
+                </p>
+
+                <h2 class="section-title">
+                    Skills
+                </h2>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+
+                        <h3>Programming</h3>
+
+                        <div class="skill-list">
+                            <span>Python</span>
+                            <span>C</span>
+                            <span>C++</span>
+                            <span>Java</span>
+                            <span>PowerShell</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>Cloud & Infrastructure</h3>
+
+                        <div class="skill-list">
+                            <span>AWS</span>
+                            <span>Microsoft Azure</span>
+                            <span>Cloud Architecture</span>
+                            <span>Networking</span>
+                            <span>Infrastructure Automation</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>Tools</h3>
+
+                        <div class="skill-list">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Power BI</span>
+                            <span>Draw.io</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <h3>Professional</h3>
+
+                        <div class="skill-list">
+                            <span>Technical Documentation</span>
+                            <span>Project Coordination</span>
+                            <span>Problem Solving</span>
+                            <span>Data Analysis</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             Projects
+        ========================== -->
+        <section id="projects" class="section">
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    Selected Work
+                </p>
+
+                <h2 class="section-title">
+                    Projects
+                </h2>
+
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <h3>
+                            AI Data Workflow Automation
+                        </h3>
+
+                        <p>
+                            Developed a workflow that converts structured
+                            user input into standardized visual data-flow
+                            diagrams, allowing non-technical users to
+                            modify enterprise workflows without manually
+                            rebuilding diagrams.
+                        </p>
+
+                        <div class="project-tech">
+                            Python • JSON • XML • Draw.io • AI
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <h3>
+                            Network Traffic DFA Classifier
+                        </h3>
+
+                        <p>
+                            Built deterministic finite automata to analyze
+                            network traffic sequences and distinguish
+                            normal TCP handshakes, incomplete connections,
+                            and potential SYN-flood behavior.
+                        </p>
+
+                        <div class="project-tech">
+                            Python • JSON • Networking • Automata Theory
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <h3>
+                            Billing Analytics Dashboard
+                        </h3>
+
+                        <p>
+                            Developed a Power BI dashboard using monthly
+                            billing data to provide clear reporting and
+                            visualization of operational trends.
+                        </p>
+
+                        <div class="project-tech">
+                            Power BI • CSV • Data Visualization
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             Professional Experience
+        ========================== -->
+        <section
+            id="experience"
+            class="section alternate-section"
+        >
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    Where I've Worked
+                </p>
+
+                <h2 class="section-title">
+                    Professional Experience
+                </h2>
+
+
+                <div class="experience-list">
+
+                    <div class="experience-card">
+
+                        <div class="experience-heading">
+
+                            <div>
+                                <h3>GE Vernova</h3>
+
+                                <p class="job-title">
+                                    Digital Technology Intern
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <p>
+                            Worked on enterprise technology projects
+                            involving artificial intelligence, cloud
+                            operations, automation, data visualization,
+                            and project coordination.
+                        </p>
+
+                    </div>
+
+
+                    <div class="experience-card">
+
+                        <div class="experience-heading">
+
+                            <div>
+                                <h3>Nucor Steel</h3>
+
+                                <p class="job-title">
+                                    Business Infrastructure Intern
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <p>
+                            Supported infrastructure projects involving
+                            enterprise device deployment, PowerShell
+                            automation, cloud migration, and technology
+                            modernization.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             Contact
+        ========================== -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+
+                <p class="contact-intro">
+                    I'm always interested in connecting with professionals and
+                    learning about opportunities involving software, cloud
+                    infrastructure, networking, and technology.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:ife123454@gmail.com" class="contact-button">
+                        Contact Me
+                    </a>
+
+                    <a href="mailto:ife900@hotmail.com" class="contact-button">
+                        Email
+                    </a>
+
+                    <a href="https://github.com/guycentury"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-button">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ifeoluwa-famogun"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-button">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
 
 
     <!-- =========================
-         FOOTER
+         Footer
     ========================== -->
     <footer>
 
@@ -394,8 +485,11 @@
             © 2026 Ifeoluwa Famogun
         </p>
 
-    </footer>
+        <p>
+            Built with HTML, CSS, Git & GitHub
+        </p>
 
+    </footer>
 
 </body>
 
